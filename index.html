@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Call Back Hell</title>
+</head>
+<body>
+   
+    <script>
+
+        var myDiv = document.createElement('div')
+        myDiv.style.height = '300px';
+        myDiv.style.width = '600px';
+        myDiv.style.backgroundColor = '	#FAEBD7';
+        myDiv.style.fontSize = '100px';
+        myDiv.style.textAlign = 'center';
+        myDiv.style.paddingTop = '100px';
+        myDiv.style.marginTop = '150px';
+        myDiv.style.marginLeft = '450px';
+
+
+
+document.body.appendChild(myDiv);
+
+
+counter = setTimeout( function (){
+    myDiv.innerText = 'Happy Independance Day!!!'
+},11000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = "10"
+},1000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = '9'
+},2000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = '8'
+},3000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = '7'
+},4000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = '6'
+},5000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = '5'
+},6000);
+
+
+counter = setTimeout( function (){
+    myDiv.innerText = '4'
+},7000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = '3'
+},8000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = '2'
+},9000);
+
+counter = setTimeout( function (){
+    myDiv.innerText = '1'
+},10000);
+
+
+</script>
+</body>
+</html>
